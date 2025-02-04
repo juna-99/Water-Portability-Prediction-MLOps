@@ -1,6 +1,9 @@
 # local package
 -e .
-
+mlflow
+dagshub
+seaborn
+xgboost
 # external requirements
 click
 Sphinx
