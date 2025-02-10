@@ -23,7 +23,7 @@ The pipeline is built using **DVC (Data Version Control)** for data and model ve
 5. **Model Registration**: Register the best model in MLflow’s registry using aliases for easy deployment.
 6. **Desktop Application**: Create a Tkinter app that fetches the latest model from MLflow and performs predictions.
 
-![Alt text](blob\Flowchart (1).jpg)
+![Alt text](https://github.com/juna-99/Water-Portability-Prediction-MLOps/blob/32034c756697c4f2e4cd371ba63491c60c97762e/blob/Flowchart%20(1).jpg)
 
 ---
 
@@ -81,6 +81,7 @@ This project follows a structured workflow to streamline the MLOps process:
   
 ---
 ## 📚 Project Directory Structure
+
 ├── LICENSE
 ├── Makefile           <- Makefile with commands like `make data` or `make train`
 ├── README.md          <- The top-level README for developers using this project.
