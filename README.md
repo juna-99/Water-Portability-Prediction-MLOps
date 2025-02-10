@@ -1,5 +1,4 @@
 # 🌊 Water Potability Prediction with MLOps
-==============================
 
 This project is an end-to-end machine learning pipeline that predicts whether water is potable or not based on various water quality parameters. The project incorporates **MLOps practices** for automation, reproducibility, and scalability. It also includes a **Tkinter-based GUI** for user interaction, allowing users to input water quality information and get predictions in real-time.
 
@@ -79,29 +78,6 @@ This project follows a structured workflow to streamline the MLOps process:
   - Recall: 0.344
   
 ---
-
-## 📚 Project Directory Structure
-└── project_root/
-    ├── LICENSE
-    ├── README.md
-    ├── data/
-    │   ├── raw/
-    │   ├── processed/
-    │   └── interim/
-    ├── models/
-    ├── notebooks/
-    ├── src/
-    │   ├── data/
-    │   │   └── make_dataset.py
-    │   ├── features/
-    │   │   └── build_features.py
-    │   ├── models/
-    │   │   ├── train_model.py
-    │   │   └── predict_model.py
-    │   └── visualization/
-    │       └── visualize.py
-    ├── requirements.txt
-    └── setup.py
 
 ## 👤 Credits
 
