@@ -32,14 +32,16 @@ reg = mlflow.register_model(model_uri, model_name)
 # Get the model version
 model_version = reg.version  # Get the registered model version
 
-# Transition the model version to Staging
-new_stage = "Staging"
+# Define alias instead of deprecated stages
+alias = "Production"  # Equivalent to 'Staging' stage
 
-client.transition_model_version_stage(
-    name=model_name,
-    version=model_version,
-    stage=new_stage,
-    archive_existing_versions=True
-)
+# Fetch the latest registered model version
+latest_version = client.get_latest_versions(model_name)[0].version
 
-print(f"Model {model_name} version {model_version} transitioned to {new_stage} stage.")
+# Assign alias to the latest model version
+client.set_registered_model_alias(model_name, alias, latest_version)
+
+# Optionally, add a tag to indicate validation status
+client.set_model_version_tag(model_name, latest_version, "validation_status", "pending")
+
+print(f"Model {model_name} version {latest_version} assigned alias '{alias}' and tagged for validation.")
